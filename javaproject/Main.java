@@ -1,3 +1,4 @@
+package javaproject;
 /*
  * The deadline is the end of January(30th of January)
 
@@ -6,9 +7,11 @@ The farmers have a field of size NxN, where they grows carrots. Farmers move ran
 
 
 public class Main {
+    private static Field field;
+    
     public static void main(String[] args) {
         System.out.println("Enter field size");
         int N = Integer.parseInt(System.console().readLine());
-        Field field = new Field(N);
+        field = new Field(N);
     }
 }
